@@ -9,7 +9,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:a": "cross-env REACT_APP_SITE=a npm run start",
+    "start:b": "cross-env REACT_APP_SITE=b npm run start",
     "build": "react-scripts build",
+    "build:a": "cross-env REACT_APP_SITE=a npm run build",
+    "build:b": "cross-env REACT_APP_SITE=b npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -27,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
   }
 }
